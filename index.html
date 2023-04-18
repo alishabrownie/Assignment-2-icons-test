@@ -1,0 +1,99 @@
+<html>
+
+<head>
+<title>
+My Website
+</title>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/buzz/1.2.0/buzz.min.js"></script>
+
+<style>
+    .row{
+        width:720px;
+        margin: 10px auto 10px auto ;
+    }
+    .image-container {
+        display: table-cell;
+        vertical-align: middle;
+        padding:20px;
+    }
+    
+</style>
+
+
+</head>
+
+<body style="background-color: rosybrown;">
+
+
+
+
+
+  
+    
+<div class="row">
+            <div class="image-container"><img id="breathe1" src="img/breathe1.png"  onmouseover= "this.src='img/breathe_h.png';"
+                onmouseout= "this.src='img/breathe1.png';" height="200" width="200"/> </div>
+            <div class="image-container"><img id="exercise2" src="img/exercise2.png"  onmouseover= "this.src='img/exercise_h.png';"
+                onmouseout= "this.src='img/exercise2.png';" height="200" width="200"/></div>
+            <div class="image-container"><img id="shower3" src="img/shower3.png"  onmouseover= "this.src='img/shower_h.png';"
+                onmouseout= "this.src='img/shower3.png';" height="200" width="200"/></div>
+</div>
+
+<div class="row">
+    <div class="image-container"><img id="puzzle4" src="img/puzzle4.png"  onmouseover= "this.src='img/puzzle_h.png';"
+        onmouseout= "this.src='img/puzzle4.png';" height="200" width="200"/></div>
+    <div class="image-container"><img id="music5" src="img/music5.png"  onmouseover= "this.src='img/music_h.png';"
+        onmouseout= "this.src='img/music5.png';" height="200" width="200"/></div>
+    <div class="image-container"><img id="colouring6" src="img/colouring6.png"  onmouseover= "this.src='img/colouring_h.png';"
+        onmouseout= "this.src='img/colouring6.png';" height="200" width="200"/></div>
+</div>
+
+<div class="row">
+    <div class="image-container"><img id="snack7" src="img/snack7.png"  onmouseover= "this.src='img/snack_h.png';"
+        onmouseout= "this.src='img/snack7.png';" height="200" width="200"/></div>
+    <div class="image-container"><img id="convo8" src="img/convo8.png"  onmouseover= "this.src='img/conversation_h.png';"
+        onmouseout= "this.src='img/convo8.png';" height="200" width="200"/></div>
+    <div class="image-container"><img id="park9" src="img/park9.png"  onmouseover= "this.src='img/park_h.png';"
+        onmouseout= "this.src='img/park9.png';" height="200" width="200"/></div>
+</div>
+
+
+
+
+
+
+
+
+
+            <script>
+                var sound1 = new buzz.sound("sound/breathe.mp3");
+                var sound2 = new buzz.sound("sound/exercise.mp3");
+                var sound3 = new buzz.sound("sound/shower.mp3");
+                var sound4 = new buzz.sound("sound/puzzle.mp3");
+                var sound5 = new buzz.sound("sound/music.mp3");
+                var sound6 = new buzz.sound("sound/colouring.mp3");
+                var sound7 = new buzz.sound("sound/snack.mp3");
+                var sound8 = new buzz.sound("sound/conversation.mp3");
+                var sound9 = new buzz.sound("sound/park.mp3");
+                
+                
+                window.onload = function() {
+                document.getElementById('breathe1').addEventListener('click', function () {sound1.play(); });  
+                document.getElementById('exercise2').addEventListener('click', function () {sound2.play(); });
+                document.getElementById('shower3').addEventListener('click', function () {sound3.play(); });
+                document.getElementById('puzzle4').addEventListener('click', function () {sound4.play(); });  
+                document.getElementById('music5').addEventListener('click', function () {sound5.play(); });
+                document.getElementById('colouring6').addEventListener('click', function () {sound6.play(); });
+                document.getElementById('snack7').addEventListener('click', function () {sound7.play(); });  
+                document.getElementById('convo8').addEventListener('click', function () {sound8.play(); });
+                document.getElementById('park9').addEventListener('click', function () {sound9.play(); });
+                }
+</script>
+
+
+
+
+</body>
+
+</html>
